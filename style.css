@@ -1,37 +1,45 @@
 html, body {
-  padding: 0px;
-  margin: 0px;  
+  padding: 0;
+  margin: 0;  
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  }
-li {
+nav {
   display: inline;
-  }
-li.Logo>p{
-  margin:6px 0px 0px 10px;
-  font-family: 'Brush Script MT', cursive;
-  font-size: 40px;
-  float: left;
-  }
-li.Hamburger>a>img{
-  width:30px;
-  height:30px;
-  margin:18px 5px 5px 5px;
+}
+
+div {
   float: right;
 }
-li.Cart>a>img{
-  margin:22px 15px 0px 0px;
-  width:15px;
+
+.Logo {
+  float: left;
+}
+
+.Logo p {
+  margin: 6px 0 0 10px;
+  font-family: 'Brush Script MT', cursive;
+  font-size: 40px;
+}
+
+.Hamburger img {
+  width: 30px;
+  height: 30px;
+  margin: 19px 5px 5px 3px;
+}
+
+.Cart img {
+  margin: 25px 10px 0 0;
+  width: 15px;
   height: 15px;
+} 
+
+.Cart p {
+  margin: 25px 5px 0 0;
   float: right;
 } 
-.Vertical-divider{
-  margin:20px 5px 0px 5px;
+
+.Vertical-divider {
+  margin: 22px 0 0 5px;
   border-left: 1px solid black;
   height: 22px;
-  float: right;
 }
