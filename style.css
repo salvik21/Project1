@@ -1,0 +1,45 @@
+html, body {
+  padding: 0;
+  margin: 0;  
+}
+
+nav {
+  display: inline;
+}
+
+.hamburger-wrapper, .cart-wrapper, .count-label-wrapper {
+  float: right;
+}
+
+.logo-wrapper {
+  float: left;
+}
+
+.logo {
+  margin: 6px 0 0 10px;
+  font-family: 'Brush Script MT', cursive;
+  font-size: 40px;
+}
+
+.hamburger {
+  width: 30px;
+  height: 30px;
+  margin: 19px 5px 5px 3px;
+}
+
+.cart {
+  margin: 25px 10px 0 0;
+  width: 15px;
+  height: 15px;
+} 
+
+.count-label {
+  margin: 25px 5px 0 0;
+} 
+
+.vertical-divider {
+  float: right;
+  margin: 22px 0 0 5px;
+  border-left: 1px solid #000000;
+  height: 22px;
+}
