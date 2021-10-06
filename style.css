@@ -1,9 +1,6 @@
-* { 
-  box-sizing: border-box;
-}
-
-body {
+body, html {
   margin: 0;
+  padding: 0;
 }
 
 header {
@@ -86,12 +83,14 @@ main {
   font-family: Poppins, sans-serif;
   word-spacing: 7px;
   letter-spacing: 3px;
+  box-sizing: border-box;
 }
 
 .carousel__main-title-wrapper {
   position: absolute;
   top: 270px;
   margin-left: 14px;
+  box-sizing: border-box;
 }
 
 .carousel__second-title-wrapper {
