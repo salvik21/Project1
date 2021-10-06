@@ -1,16 +1,23 @@
 * { 
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  width: 100%;
-  min-height: 100vh;
+  margin: 0;
+}
+
+header {
+  min-height: 6vh;
 }
 
 nav {
   display: inline;
+  min-height: 100%;
+}
+
+main {
+  margin-top: 15px;
+  min-height: 80vh;
 }
 
 .hamburger-wrapper, .cart-wrapper, .count-label-wrapper {
@@ -50,54 +57,61 @@ nav {
   height: 22px;
 }
 
-section {
-  clear: both;
-  height: auto;
+.carousel {
   width: 100%;
+  height: auto;
 }
 
-.carousel__image-background {
+.carousel__background-image-wrapper {
+  position: relative; 
+}
+
+.carousel__background-image-brightness {
+  background: rgba(0, 0, 0, 0.1);
   position: absolute;
-  margin-top: 15px;
-  filter: brightness(93%);
-  width: 320px;
-  height: 450px;
-  background-image: url(images/carousel_img_1.png);
-  background-size: cover;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  }
+
+.carousel__background-image {
+  width: 100%;
+  height: auto;
 }
 
 .carousel__main-title {
   color: #ffffff;
-  font-size: 28px;
+  font-size: 27px;
   font-family: Poppins, sans-serif;
   word-spacing: 7px;
   letter-spacing: 3px;
 }
 
 .carousel__main-title-wrapper {
-  position: relative;
-  top: 240px;
-  left: 14px;
+  position: absolute;
+  top: 270px;
+  margin-left: 14px;
 }
 
 .carousel__second-title-wrapper {
-  position: relative;
-  top: 242px;
-  left: 14px;
+  position: absolute;
+  top: 310px;
+  margin-left: 14px;
 }
 
 .carousel__second-title {
   color: #aa6d6d;
   font-family: Poppins, sans-serif;
-  font-size: 20px;
+  font-size: 22px;
   word-spacing: 7px;
   letter-spacing: 3px;
 }
 
 .carousel__forward-button {
-  position: relative;
-  top: 290px;
-  left: 90px;
+  position: absolute;
+  top: 415px;
+  margin-left: 95px;
   width: 50px;
   height: 50px;
   background-image: url(images/forward.png);
@@ -106,9 +120,9 @@ section {
 }
 
 .carousel__back-button {
-  position: relative;
-  top: 240px;
-  left: 14px;
+  position: absolute;
+  top: 415px;
+  margin-left: 30px;
   width: 50px;
   height: 50px;
   background-image: url(images/back-button.png);
