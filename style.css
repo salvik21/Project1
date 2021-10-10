@@ -3,18 +3,13 @@ body, html {
   padding: 0;
 }
 
-header {
-  min-height: 6vh;
-}
-
 nav {
-  display: inline;
-  min-height: 100%;
+  width: 100%;
+  height: 58px;
 }
 
 main {
   margin-top: 15px;
-  min-height: 80vh;
 }
 
 .hamburger-wrapper, .cart-wrapper, .count-label-wrapper {
@@ -55,26 +50,12 @@ main {
 }
 
 .carousel {
-  width: 100%;
-  height: auto;
-}
-
-.carousel__background-image-wrapper {
   position: relative; 
 }
 
-.carousel__background-image-brightness {
-  background: rgba(0, 0, 0, 0.1);
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  }
-
 .carousel__background-image {
   width: 100%;
-  height: auto;
+  height: 504px;
 }
 
 .carousel__main-title {
