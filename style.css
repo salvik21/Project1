@@ -1,10 +1,15 @@
-html, body {
+body {
+  margin: 0;
   padding: 0;
-  margin: 0;  
 }
 
 nav {
-  display: inline;
+  width: 100%;
+  height: 58px;
+}
+
+main {
+  margin-top: 15px;
 }
 
 .hamburger-wrapper, .cart-wrapper, .count-label-wrapper {
@@ -42,4 +47,71 @@ nav {
   margin: 22px 0 0 5px;
   border-left: 1px solid #000000;
   height: 22px;
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel__image {
+  width: 100%;
+  height: 504px;
+  display: block;
+}
+
+.carousel__main-title {
+  color: #ffffff;
+  font-size: 27px;
+  font-family: Poppins, sans-serif;
+  word-spacing: 7px;
+  letter-spacing: 3px;
+  box-sizing: border-box;
+}
+
+.carousel__main-title-wrapper {
+  position: absolute;
+  top: 235px;
+  margin-left: 14px;
+  box-sizing: border-box;
+}
+
+.carousel__second-title-wrapper {
+  position: absolute;
+  top: 285px;
+  margin-left: 14px;
+}
+
+.carousel__second-title {
+  color: #aa6d6d;
+  font-family: Poppins, sans-serif;
+  font-size: 22px;
+  word-spacing: 7px;
+  letter-spacing: 3px;
+}
+
+.carousel__forward-button {
+  position: absolute;
+  top: 390px;
+  margin-left: 95px;
+  width: 50px;
+  height: 50px;
+  background-image: url(images/forward.png);
+  background-size: cover;
+  border: 2px solid #fffffa;
+}
+
+.carousel__back-button {
+  position: absolute;
+  top: 390px;
+  margin-left: 30px;
+  width: 50px;
+  height: 50px;
+  background-image: url(images/back-button.png);
+  background-size: cover;
+  border: 2px solid #fffffa;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('fond/Poppins-SemiBold.ttf');
 }
