@@ -147,7 +147,7 @@ main {
 .about__subtitle, .gallery__subtitle {
   text-transform: uppercase;
   color: #be4642;
-  margin: 10px 0;
+  margin: 10px 0 30px;
 }
 
 .about__paragraph {
@@ -159,7 +159,7 @@ main {
   font-family: monospace;
   font-weight: bold;
   font-size: 38px;
-  margin-bottom: 10px;
+  margin: 0;
 }
 
 .galery__title, .gallery__subtitle, .footer__title, .footer__subtitle, .footer__copyright {
@@ -185,8 +185,7 @@ main {
 
 .gallery {
   background-color: #fafafa;
-  padding: 10px;
-  margin-top: 30px;
+  padding: 70px 10px;
 }
 
 .footer__icon {
