@@ -115,3 +115,106 @@ main {
   font-family: 'Poppins';
   src: url('fond/Poppins-SemiBold.ttf');
 }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('fond/Montserrat-Regular.ttf');
+}
+
+.about__img-wrapper {
+  position: relative;
+  margin-top: 60px;
+  height: 315px;
+}
+
+.about__img-one {
+  position: absolute;
+  left: 20px;
+  top: 140px;
+  z-index: 10;
+}
+
+.about__img-two {
+  position: absolute;
+  right: 20px;
+  z-index: 0;
+}
+
+.about__text-wrapper {
+  padding: 20px;
+}
+
+.about__subtitle, .gallery__subtitle {
+  text-transform: uppercase;
+  color: #be4642;
+  margin: 10px 0 30px;
+}
+
+.about__paragraph {
+  color: #3a3939;
+  font-family: Montserrat, sans-serif;
+}
+
+.about__title, .galery__title {
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 38px;
+  margin: 0;
+}
+
+.galery__title, .gallery__subtitle, .footer__title, .footer__subtitle, .footer__copyright {
+  text-align: center;
+}
+
+.gallery__img {
+  flex: 1 1 auto;
+  padding: 5px 5px;
+}
+
+.gallery__img img {
+  width: 100%; 
+  display: block;
+}
+
+.gallery__img-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 5px;
+}
+
+.gallery {
+  background-color: #fafafa;
+  padding: 70px 10px;
+}
+
+.footer__icon {
+  width: 40px;
+  height: 40px;
+}
+
+.footer__title, .footer__copyright {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.footer__subtitle{
+  font-family: 'Brush Script MT', cursive;
+  font-size: 40px;
+}
+
+footer {
+  width: 100%;
+  padding: 30px 0;
+  background-color: #f0f0fc;
+}
+
+.footer__icon-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__icon-wrapper img {
+  padding: 10px;
+}
