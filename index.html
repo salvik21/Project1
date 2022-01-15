@@ -9,36 +9,41 @@
 <body>
     <header>
         <nav>
-            <div class="hamburger-wrapper">
-                <img class="hamburger" src="images/Hamburger.png" alt="Hamburger butten image">
+            <div class="nav__hamburger-wrapper">
+                <img class="nav__hamburger" src="images/Hamburger.png" alt="Hamburger butten image">
+                
             </div>
-            <div class="vertical-divider"></div>
-            <div class="count-label-wrapper">
-                <p class="count-label">2</p>
+            <div class="nav__vertical-divider"></div>
+            <div class="nav__count-label-wrapper">
+                <p class="nav__count-label">2</p>
             </div>
-            <div class="cart-wrapper">
-                <img class="cart" src="images/cart.png" alt="Cart image">
+            <div class="nav__cart-wrapper">
+                <img class="nav__cart" src="images/cart.png" alt="Cart image" >
             </div>
-            <div class="logo-wrapper">
-                <p class="logo">Renome</p>
+            <div class="nav__logo-wrapper">
+                <p class="nav__logo">Renome</p>
             </div>
+            
         </nav>
     </header>
     <main>
-        <section>
-            <div class="carousel">
-                <div class="carousel__image-wrapper">
-                    <img class="carousel__image" src="images/carousel_img_1.png" alt=" image_1">
-                </div>
-                <div class="carousel__main-title-wrapper">
-                    <h1 class="carousel__main-title">made with love</h1>
-                </div>
-                <div class="carousel__second-title-wrapper">
-                    <h3 class="carousel__second-title">for you</h3>
-                </div>
-                <div class="carousel__forward-button"></div>
-                <div class="carousel__back-button"></div>
+        <section class="carousel">
+           <div id="nav__cart-menu">
+              <div id="cart-menu__button"><a target="__blank" href="" >$44.50</a></div>
+              <div id="cart-menu__button"><a target="__blank" href="" >View Cart</a></div>
+              <div id="cart-menu__button"><a target="__blank" href="" >Checkout</a></div>
+           </div>
+            <div class="carousel__image-wrapper">
+                <img class="carousel__image" src="images/carousel_img_1.png" alt=" image_1">
             </div>
+            <div class="carousel__main-title-wrapper">
+                <h1 class="carousel__main-title">made with love</h1>
+            </div>
+            <div class="carousel__second-title-wrapper">
+                <h3 class="carousel__second-title">for you</h3>
+            </div>
+            <div class="carousel__forward-button"></div>
+            <div class="carousel__back-button"></div>
         </section>
         <section class="about">
             <div class="about__img-wrapper">
@@ -67,12 +72,13 @@
     <footer >
         <h1 class="footer__title">follow us</h1>
         <div class="footer__icon-wrapper">
-        <img class="footer__icon" src="images/facebook.png" alt="facebook">
-        <img class="footer__icon" src="images/twiter.png" alt="twiter">
-        <img class="footer__icon" src="images/google.png" alt="google">
+        <a target="__blank" href="facebook.com"><img class="footer__icon" src="images/facebook.png" alt="facebook"></a>
+        <a target="__blank" href=" "><img class="footer__icon" src="images/twiter.png" alt="twiter"></a>
+        <a target="__blank" href=" "><img class="footer__icon" src="images/google.png" alt="google"></a>
         </div>
         <h2 class="footer__subtitle">Renome</h2>
         <p class="footer__copyright">copyright 2015 renome by estetiq</p>
     </footer>
+    <script src=java.js></script>
 </body>
 </html>
