@@ -1,24 +1,14 @@
-const navCart = document.querySelector(".nav__cart");
+const navCart = document.getElementById("nav__cart");
 const cartMenu = document.getElementById("nav__cart-menu");
-cartMenu.classList.add("showMenu_off");
 
-function Cart() {
-  if(cartMenu.classList.contains("showMenu_on")){
-    cartMenu.classList.remove("showMenu_on");
-    cartMenu.classList.add("showMenu_off");
+function toggleCart() {
+  if(cartMenu.classList.contains("nav__cart-menu--on")){
+    cartMenu.classList.remove("nav__cart-menu--on");
+    cartMenu.classList.add("nav__cart-menu--off");
   }
   else{
-    cartMenu.classList.add("showMenu_on");
-    cartMenu.classList.remove("showMenu_off");
+    cartMenu.classList.add("nav__cart-menu--on");
+    cartMenu.classList.remove("nav__cart-menu--off");
   }
 }
-navCart.addEventListener("click", Cart);
-
-function Cart2() {
-  if (cartMenu.style.display === "block") {
-    cartMenu.style.display = "none";
-  } 
-  else {
-    cartMenu.style.display = "block";
-  }
-}
+navCart.addEventListener("click", toggleCart);
