@@ -250,8 +250,3 @@ footer {
   display: block;
   z-index: 10;
 }
-
-.nav__cart-menu--off{
-  display: none;
-  z-index: 10;
-}
