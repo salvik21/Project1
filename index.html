@@ -10,8 +10,35 @@
     <header>
         <nav>
             <div class="nav__hamburger-wrapper">
-                <img class="nav__hamburger" src="images/Hamburger.png" alt="Hamburger butten image">
-                
+                <div id="nav__hamburger">
+                    <img id="nav__hamburger-closeIcon" class="nav__hamburger-menu--off" src="images/close_icon.png" alt="Close icon image">
+                    <img id="nav__hamburger-hamburgerIcon" class="nav__hamburger-menu--on" src="images/Hamburger.png" alt="Hamburger butten image">
+                </div>
+                <div id="nav__hamburger-menu" class="nav__hamburger-menu--off">
+                    <div class="hamburger-menu__search-bar">
+                        <div class="hamburger-menu__search-bar__input-field">
+                            <input type="text" name="search" autocomplete="off" placeholder="Search..">
+                        </div>
+                        <div class="hamburger-menu__search-bar__image">
+                        <img class="hamburger-menu__search-image" src="images/search_icon.png" alt="Search icon">
+                        </div>
+                    </div>
+                    <div class="hamburger-menu__button" ><a href="#">HOME</a></div>
+                    <div class="hamburger-menu__button" ><a href="#">ABOUT</a></div>
+                    <div class="hamburger-menu__button" ><a href="#">MENU</a></div>
+                    <div class="hamburger-menu__button" ><a href="#">RESERVATIONS</a></div>
+                    <div class="hamburger-menu__button" ><a href="#">BLOG</a></div>
+                    <div class="hamburger-menu__submenu">
+                        <div class="hamburger-menu__submenu--title">
+                            <p>FEATURES</p>
+                        </div>
+                        <div id="hamburger-menu--submenu_image_button">
+                            <img class="hamburger-subbutton--forward_black_image" src="images/forward_black.png" alt="Forward button">
+                        </div>
+                    </div>
+                    <div class="hamburger-menu__button" ><a href="#">SHOP</a></div>
+                    <div class="hamburger-menu__button" ><a href="#">CONTACT</a></div>
+                </div>
             </div>
             <div class="nav__vertical-divider"></div>
             <div class="nav__count-label-wrapper">
@@ -20,15 +47,14 @@
             <div class="nav__cart-wrapper">
                 <img id="nav__cart" src="images/cart.png" alt="Cart image" >
                 <div id="nav__cart-menu">
-                    <div class="cart-menu__button"><a href="" >$44.50</a></div>
-                    <div class="cart-menu__button"><a href="" >View Cart</a></div>
-                    <div class="cart-menu__button"><a href="" >Checkout</a></div>
+                    <div class="cart-menu__button"><a href="#" >$44.50</a></div>
+                    <div class="cart-menu__button"><a href="#" >View Cart</a></div>
+                    <div class="cart-menu__button"><a href="#" >Checkout</a></div>
                  </div>
             </div>
             <div class="nav__logo-wrapper">
                 <p class="nav__logo">Renome</p>
             </div>
-            
         </nav>
     </header>
     <main>
@@ -79,6 +105,7 @@
         <h2 class="footer__subtitle">Renome</h2>
         <p class="footer__copyright">copyright 2015 renome by estetiq</p>
     </footer>
+    <script src=hamburgerMenu.js></script>
     <script src=cart.js></script>
 </body>
 </html>

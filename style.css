@@ -4,7 +4,6 @@ body {
 }
 
 nav {
-  width: 100%;
   height: 58px;
 }
 
@@ -26,7 +25,7 @@ main {
   font-size: 40px;
 }
 
-.nav__hamburger {
+#nav__hamburger {
   width: 30px;
   height: 30px;
   margin: 19px 5px 5px 3px;
@@ -200,7 +199,7 @@ main {
   font-weight: bold;
 }
 
-.footer__subtitle{
+.footer__subtitle {
   font-family: 'Brush Script MT',  sans-serif;
   font-size: 40px;
 }
@@ -240,13 +239,141 @@ footer {
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
+  background-color: #ffffff;
 }
 
 .cart-menu__button:hover {
   background-color: #f5f5f5;
 } 
 
-.nav__cart-menu--on{
+.nav__cart-menu--on {
   display: block;
-  z-index: 10;
+  z-index: 30;
+}
+
+#nav__hamburger-menu {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 73px;
+  left: 0;
+  width: 100%;
+  height: 556px;
+  background-color: #ffffff;
+  z-index: 30;
+}
+
+.hamburger-menu__button a {
+  color: rgb(0, 0, 0);
+  padding: 23px 0 23px 10px;
+  font-size: 13px;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: left;
+  font-family: 'Montserrat';
+  letter-spacing: 3px;
+}
+
+.hamburger-menu__button a:hover {
+  color: #be4642;
+}
+
+.hamburger-menu__submenu {
+  display: flex;
+  align-items: center;
+}
+
+.hamburger-menu__submenu--title {
+  flex: auto;
+}
+
+#hamburger-menu--submenu_image_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  margin-right: 20px;
+  height: 48px;
+  border: solid rgb(163, 156, 156) 1px;
+}
+
+.hamburger-subbutton--forward_black_image {
+  width: 25px;
+  height: 25px;
+}
+
+.hamburger-menu__submenu--title {
+  color: rgb(0, 0, 0);
+  padding: 10px 0 10px 10px;
+  font-size: 13px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: left;
+  font-family: 'Montserrat';
+  letter-spacing: 3px;
+  margin: 0;
+}
+
+input[type=text] {
+  outline: 0;
+  width: 100%;
+  height: 60px;
+  border: none;
+  font-size: 16px;
+  font-family: 'Montserrat';
+  letter-spacing: 3px;
+}
+
+input[type=text]:active {
+  font-family: sans-serif;
+}
+
+.hamburger-menu__search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.hamburger-menu__search-bar__input-field {
+  flex: auto;
+  margin: 0 10px;
+}
+
+.hamburger-menu__search-bar__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  margin-right: 20px;
+  height: 20px;
+}
+
+.hamburger-menu__search-image {
+  width: 15px;
+  height: 15px;
+}
+
+.hamburger-menu__submenu, .hamburger-menu__button {
+  border-top: 2px solid #fcfcfc;
+}
+
+.nav__hamburger-menu--on {
+  display: block;
+  z-index: 50;
+}
+
+.nav__hamburger-menu--off {
+  display: none;
+}
+
+
+#nav__hamburger-closeIcon {
+  width: 70%;
+  padding: 5px;
+}
+
+#nav__hamburger-hamburgerIcon {
+ width: 110%;
 }
