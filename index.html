@@ -10,34 +10,49 @@
     <header>
         <nav>
             <div class="nav__hamburger-wrapper">
-                <div id="nav__hamburger">
-                    <img id="nav__hamburger-closeIcon" class="nav__hamburger-menu--off" src="images/close_icon.png" alt="Close icon image">
-                    <img id="nav__hamburger-hamburgerIcon" class="nav__hamburger-menu--on" src="images/Hamburger.png" alt="Hamburger butten image">
+                <div id="nav__hamburger-icon" class="nav__hamburger-icon">
+                    <div class="nav__hamburger-icon-first-line"></div>
+                    <div class="nav__hamburger-icon-second-line"></div>
+                    <div class="nav__hamburger-icon-third-line"></div>
                 </div>
-                <div id="nav__hamburger-menu" class="nav__hamburger-menu--off">
-                    <div class="hamburger-menu__search-bar">
-                        <div class="hamburger-menu__search-bar__input-field">
+                <div id="nav__hamburger-menu" class="nav__hamburger-menu --off">
+                    <div class="nav__hamburger-menu-search-bar-wrapper">
+                        <div class="nav__hamburger-menu-search-bar-input-field">
                             <input type="text" name="search" autocomplete="off" placeholder="Search..">
                         </div>
-                        <div class="hamburger-menu__search-bar__image">
-                        <img class="hamburger-menu__search-image" src="images/search_icon.png" alt="Search icon">
+                        <div class="nav__hamburger-menu-search-bar-image-wrapper">
+                            <img class="nav__hamburger-menu-search-image" src="images/search_icon.png" alt="Search icon">
                         </div>
                     </div>
-                    <div class="hamburger-menu__button" ><a href="#">HOME</a></div>
-                    <div class="hamburger-menu__button" ><a href="#">ABOUT</a></div>
-                    <div class="hamburger-menu__button" ><a href="#">MENU</a></div>
-                    <div class="hamburger-menu__button" ><a href="#">RESERVATIONS</a></div>
-                    <div class="hamburger-menu__button" ><a href="#">BLOG</a></div>
-                    <div class="hamburger-menu__submenu">
-                        <div class="hamburger-menu__submenu--title">
-                            <p>FEATURES</p>
+                    <div class="nav__hamburger-menu-button" >
+                        <a href="#">HOME</a>
+                    </div>
+                    <div class="nav__hamburger-menu-button" >
+                        <a href="#">ABOUT</a>
+                    </div>
+                    <div class="nav__hamburger-menu-button" >
+                        <a href="#">MENU</a>
+                    </div>
+                    <div class="nav__hamburger-menu-button" >
+                        <a href="#">RESERVATIONS</a>
+                    </div>
+                    <div class="nav__hamburger-menu-button" >
+                        <a href="#">BLOG</a>
+                    </div>
+                    <div class="nav__hamburger-submenu-wrapper">
+                        <div class="nav__hamburger-submenu-title">
+                            <label>FEATURES</label>
                         </div>
-                        <div id="hamburger-menu--submenu_image_button">
-                            <img class="hamburger-subbutton--forward_black_image" src="images/forward_black.png" alt="Forward button">
+                        <div id="nav__hamburger-submenu-image-wrapper" class="nav__hamburger-submenu-image-wrapper">
+                            <img class="forward-black-image" src="images/forward_black.png" alt="Forward button">
                         </div>
                     </div>
-                    <div class="hamburger-menu__button" ><a href="#">SHOP</a></div>
-                    <div class="hamburger-menu__button" ><a href="#">CONTACT</a></div>
+                    <div class="nav__hamburger-menu-button">
+                        <a href="#">SHOP</a>
+                    </div>
+                    <div class="nav__hamburger-menu-button">
+                        <a href="#">CONTACT</a>
+                    </div>
                 </div>
             </div>
             <div class="nav__vertical-divider"></div>
@@ -45,8 +60,8 @@
                 <p class="nav__count-label">2</p>
             </div>
             <div class="nav__cart-wrapper">
-                <img id="nav__cart" src="images/cart.png" alt="Cart image" >
-                <div id="nav__cart-menu">
+                <img id="nav__cart" class="nav__cart" src="images/cart.png" alt="Cart image" >
+                <div id="nav__cart-menu" class="nav__cart-menu">
                     <div class="cart-menu__button"><a href="#" >$44.50</a></div>
                     <div class="cart-menu__button"><a href="#" >View Cart</a></div>
                     <div class="cart-menu__button"><a href="#" >Checkout</a></div>

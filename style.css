@@ -21,17 +21,14 @@ main {
 
 .nav__logo {
   margin: 6px 0 0 10px;
-  font-family: 'Brush Script MT', sans-serif;
-  font-size: 40px;
+  font-family: 'Pacifico';
+  font-size: 25px;
+  letter-spacing: 3px;
+  color: #000000;
+  font-weight: 400;
 }
 
-#nav__hamburger {
-  width: 30px;
-  height: 30px;
-  margin: 19px 5px 5px 3px;
-}
-
-#nav__cart {
+.nav__cart {
   margin: 25px 10px 0 0;
   width: 15px;
   height: 15px;
@@ -119,6 +116,11 @@ main {
 @font-face {
   font-family: 'Montserrat';
   src: url('fond/Montserrat-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Pacifico';
+  src: url('fond/Pacifico-Regular.ttf');
 }
 
 .about__img-wrapper {
@@ -219,7 +221,7 @@ footer {
   padding: 10px;
 }
 
-#nav__cart-menu {
+.nav__cart-menu {
   margin: 0;
   padding: 0;
   position: absolute;
@@ -228,6 +230,7 @@ footer {
   width: 200px;
   height: 116px;
   background-color: #ffffff;
+  z-index: 30;
 }
 
 .cart-menu__button a {
@@ -246,12 +249,7 @@ footer {
   background-color: #f5f5f5;
 } 
 
-.nav__cart-menu--on {
-  display: block;
-  z-index: 30;
-}
-
-#nav__hamburger-menu {
+.nav__hamburger-menu {
   position: absolute;
   margin: 0;
   padding: 0;
@@ -263,9 +261,9 @@ footer {
   z-index: 30;
 }
 
-.hamburger-menu__button a {
-  color: rgb(0, 0, 0);
-  padding: 23px 0 23px 10px;
+.nav__hamburger-menu-button a {
+  color: #000000;
+  padding: 23px 0 23px 20px;
   font-size: 13px;
   display: block;
   text-decoration: none;
@@ -276,37 +274,37 @@ footer {
   letter-spacing: 3px;
 }
 
-.hamburger-menu__button a:hover {
+.nav__hamburger-menu-button:hover {
   color: #be4642;
 }
 
-.hamburger-menu__submenu {
+.nav__hamburger-submenu-wrapper {
   display: flex;
   align-items: center;
 }
 
-.hamburger-menu__submenu--title {
+.nav__hamburger-submenu-title {
   flex: auto;
 }
 
-#hamburger-menu--submenu_image_button {
+.nav__hamburger-submenu-image-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 48px;
   margin-right: 20px;
   height: 48px;
-  border: solid rgb(163, 156, 156) 1px;
+  border: solid #a49d9d 1px;
 }
 
-.hamburger-subbutton--forward_black_image {
+.forward-black-image {
   width: 25px;
   height: 25px;
 }
 
-.hamburger-menu__submenu--title {
+.nav__hamburger-submenu-title {
   color: rgb(0, 0, 0);
-  padding: 10px 0 10px 10px;
+  padding: 10px 0 10px 20px;
   font-size: 13px;
   text-decoration: none;
   text-transform: uppercase;
@@ -331,17 +329,17 @@ input[type=text]:active {
   font-family: sans-serif;
 }
 
-.hamburger-menu__search-bar {
+.nav__hamburger-menu-search-bar-wrapper {
   display: flex;
   align-items: center;
 }
 
-.hamburger-menu__search-bar__input-field {
+.nav__hamburger-menu-search-bar-input-field {
   flex: auto;
-  margin: 0 10px;
+  margin: 0 20px;
 }
 
-.hamburger-menu__search-bar__image {
+.nav__hamburger-menu-search-bar-image-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -350,30 +348,44 @@ input[type=text]:active {
   height: 20px;
 }
 
-.hamburger-menu__search-image {
+.nav__hamburger-menu-search-image {
   width: 15px;
   height: 15px;
 }
-
-.hamburger-menu__submenu, .hamburger-menu__button {
+/*********************************************************/
+.nav__hamburger-submenu-wrapper, .nav__hamburger-menu-button {
   border-top: 2px solid #fcfcfc;
 }
 
-.nav__hamburger-menu--on {
-  display: block;
-  z-index: 50;
+.--off {
+  display: none;  
 }
 
-.nav__hamburger-menu--off {
-  display: none;
+.nav__hamburger-menu {
+  z-index: 30;
 }
 
-
-#nav__hamburger-closeIcon {
-  width: 70%;
-  padding: 5px;
+.nav__hamburger-icon {
+  display: inline-block;
+  margin-top: 18px;
 }
 
-#nav__hamburger-hamburgerIcon {
- width: 110%;
+.nav__hamburger-icon-first-line, .nav__hamburger-icon-second-line, .nav__hamburger-icon-third-line {
+  width: 26px;
+  height: 2px;
+  background-color: #000000;
+  margin: 6px 8px;
+  transition: 0.4s;
+}
+
+.change .nav__hamburger-icon-first-line {
+  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.change .nav__hamburger-icon-second-line {opacity: 0;}
+
+.change .nav__hamburger-icon-third-line {
+  -webkit-transform: rotate(45deg) translate(-5px, -6px);
+  transform: rotate(45deg) translate(-5px, -6px);
 }
