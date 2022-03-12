@@ -357,7 +357,7 @@ input[type=text]:active {
   border-top: 2px solid #fcfcfc;
 }
 
-.--off {
+.--hidden {
   display: none;  
 }
 
