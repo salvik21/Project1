@@ -21,32 +21,39 @@ const submenuNav = await import('./submenu.js');
 document.addEventListener("click", function (event) {
     switch (event.target) {
         case navCart:
-            hamburgerNav.hamburgerHide();
-            submenuNav.submenuControl();
-            cartNav.cartControl()
+            cartNav.toogleCart()
+            hamburgerNav.toogleHamburgerControl();
+            hamburgerNav.toogleHamburgerIconControl();
+            submenuNav.toggleSubmenuControl();
             break;
         case hamburgerIcon:
         case hamburgerFirstline:
         case hamburgerSecondline:
         case hamburgerTrirdline:
-            hamburgerNav.hamburgerControl();
-            cartNav.cartHide();
-            submenuNav.submenuHide();
+            hamburgerNav.toogleHamburger();
+            hamburgerNav.toogleHamburgerIcon();
+            hamburgerNav.toogleHamburgerMenuControl();
+            submenuNav.toggleSubmenuControl();
+            cartNav.toogleCartControl();
             break;
         case featuresButton:
         case featuresImage:
-            submenuNav.forwardbutton();
+            submenuNav.toggleSubmenu();
+            hamburgerNav.toogleHamburger();
             break;
         case backImage:
         case backButton:
-            submenuNav.forwardbutton();
+            submenuNav.toggleSubmenu();
+            hamburgerNav.toogleHamburger();
             break;
         default:
             if ((!cartMenu.contains(event.target)) && (!hamburgerMenu.contains(event.target)) && (!subMenu.contains(event.target))) {
-                hamburgerNav.hamburgerHide();
-                cartNav.cartHide();
-                submenuNav.submenuControl();
+                hamburgerNav.toogleHamburgerControl();
+                cartNav.toogleCartControl();
+                submenuNav.toggleSubmenuControl();
+                hamburgerNav.toogleHamburgerIconControl();
             }
-    }
+     }
 
-})
+}
+)

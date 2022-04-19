@@ -1,11 +1,11 @@
 const cartMenu = document.getElementById("nav__cart-menu");
 
-export function cartControl() {
+export function toogleCart() {
   cartMenu.classList.toggle("--hidden");
 }
 
-export function cartHide() {
+export function toogleCartControl() {
   if (!cartMenu.classList.contains("--hidden")) {
-    cartControl();
+    toogleCart();
   }
 }
