@@ -1,34 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <title>Renoma</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
     <header>
         <nav>
             <div class="nav__hamburger-wrapper">
-                <img class="nav__hamburger" src="images/Hamburger.png" alt="Hamburger butten image">
-                
+                <div id="nav__hamburger-icon" class="nav__hamburger-icon">
+                    <div id="nav__hamburger-icon-first-line" class="nav__hamburger-icon-first-line"></div>
+                    <div id="nav__hamburger-icon-second-line" class="nav__hamburger-icon-second-line"></div>
+                    <div id="nav__hamburger-icon-third-line" class="nav__hamburger-icon-third-line"></div>
+                </div>
+                <div id="nav__hamburger-menu" class="nav__hamburger-menu --hidden">
+                    <div class="nav__hamburger-menu-search-bar-wrapper">
+                        <div class="nav__hamburger-menu-search-bar-input-field">
+                            <input type="text" name="search" autocomplete="off" placeholder="Search..">
+                        </div>
+                        <div class="nav__hamburger-menu-search-bar-image-wrapper">
+                            <img class="nav__hamburger-menu-search-image" src="images/search_icon.png"
+                                alt="Search icon">
+                        </div>
+                    </div>
+                    <div class="nav__hamburger-menu-button"><a href="#">HOME</a></div>
+                    <div class="nav__hamburger-menu-button"><a href="#">ABOUT</a></div>
+                    <div class="nav__hamburger-menu-button"><a href="#">MENU</a></div>
+                    <div class="nav__hamburger-menu-button"><a href="#">RESERVATIONS</a></div>
+                    <div class="nav__hamburger-menu-button"><a href="#">BLOG</a></div>
+                    <div class="nav__hamburger-submenu-button-wrapper">
+                        <div class="nav__hamburger-submenu-button-title"><label>FEATURES</label></div>
+                        <div id="nav__hamburger-submenu-button-image-wrapper"
+                            class="nav__hamburger-submenu-button-image-wrapper">
+                            <img  id="forward-black-image" class="forward-black-image" src="images/forward_black.png" alt="Forward button">
+                        </div>
+                    </div>
+                    <div class="nav__hamburger-menu-button"><a href="#">SHOP</a></div>
+                    <div class="nav__hamburger-menu-button"><a href="#">CONTACT</a></div>
+                </div>
+                <div id="nav__hamburger-submenu-wrapper" class="nav__hamburger-submenu-wrapper --hidden">
+                    <div class="nav__hamburger-submenu-back-button-wrapper">
+                        <div id="nav__hamburger-submenu-image-wrapper" class="nav__hamburger-submenu-image-wrapper">
+                            <img id="back-black-image" class="back-black-image" src="images/forward_black.png" alt="Forward button">
+                        </div>
+                        <div class="nav__hamburger-submenu-title"><labe>BACK</label></div>
+                    </div>
+                    <div class="nav__hamburger-submenu-button"><a href="#">One page</a></div>
+                    <div class="nav__hamburger-submenu-button"><a href="#">Portfolio</a></div>
+                    <div class="nav__hamburger-submenu-button"><a href="#">Shortcodes</a></div>
+                </div>
             </div>
             <div class="nav__vertical-divider"></div>
             <div class="nav__count-label-wrapper">
                 <p class="nav__count-label">2</p>
             </div>
             <div class="nav__cart-wrapper">
-                <img id="nav__cart" src="images/cart.png" alt="Cart image" >
-                <div id="nav__cart-menu">
-                    <div class="cart-menu__button"><a href="" >$44.50</a></div>
-                    <div class="cart-menu__button"><a href="" >View Cart</a></div>
-                    <div class="cart-menu__button"><a href="" >Checkout</a></div>
-                 </div>
+                <img id="nav__cart" class="nav__cart" src="images/cart.png" alt="Cart image">
+                <div id="nav__cart-menu" class="nav__cart-menu --hidden">
+                    <div class="cart__menu-button"><a href="#">$44.50</a></div>
+                    <div class="cart__menu-button"><a href="#">View Cart</a></div>
+                    <div class="cart__menu-button"><a href="#">Checkout</a></div>
+                </div>
             </div>
             <div class="nav__logo-wrapper">
                 <p class="nav__logo">Renome</p>
             </div>
-            
         </nav>
     </header>
     <main>
@@ -53,7 +93,13 @@
             <div class="about__text-wrapper">
                 <h1 class="about__title">about</h1>
                 <h5 class="about__subtitle">we create delicious memories</h5>
-                <p class="about__paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <p class="about__paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a type specimen book. It has survived not
+                    only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                    and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem
+                    Ipsum.</p>
             </div>
         </section>
         <section class="gallery">
@@ -69,16 +115,17 @@
             </div>
         </section>
     </main>
-    <footer >
+    <footer>
         <h1 class="footer__title">follow us</h1>
         <div class="footer__icon-wrapper">
-        <a target="__blank" href="facebook.com"><img class="footer__icon" src="images/facebook.png" alt="facebook"></a>
-        <a target="__blank" href=" "><img class="footer__icon" src="images/twiter.png" alt="twiter"></a>
-        <a target="__blank" href=" "><img class="footer__icon" src="images/google.png" alt="google"></a>
+            <a target="__blank" href="facebook.com"><img class="footer__icon" src="images/facebook.png"
+                    alt="facebook"></a>
+            <a target="__blank" href=" "><img class="footer__icon" src="images/twiter.png" alt="twiter"></a>
+            <a target="__blank" href=" "><img class="footer__icon" src="images/google.png" alt="google"></a>
         </div>
         <h2 class="footer__subtitle">Renome</h2>
         <p class="footer__copyright">copyright 2015 renome by estetiq</p>
     </footer>
-    <script src=cart.js></script>
+    <script type="module" src=app.js></script>
 </body>
 </html>

@@ -1,8 +1,11 @@
-const navCart = document.getElementById("nav__cart");
 const cartMenu = document.getElementById("nav__cart-menu");
 
-navCart.addEventListener("click", toggleCart);
+export function toogleCart() {
+  cartMenu.classList.toggle("--hidden");
+}
 
-function toggleCart() {
-  cartMenu.classList.toggle("nav__cart-menu--on");
+export function toogleCartControl() {
+  if (!cartMenu.classList.contains("--hidden")) {
+    toogleCart();
+  }
 }
