@@ -9,9 +9,3 @@ export function toggleSubmenuControl() {
         toggleSubmenu();
     }
 }
-
-export function toggleSubmenuControl2() {
-    if (!submenu.classList.contains("--hidden")) {
-        submenu.classList.toggle("--hidden");
-    }
-}
