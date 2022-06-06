@@ -13,10 +13,13 @@ const hamburgerButton = document.getElementById("nav__hamburger-menu-button");
 const subButton = document.getElementById("nav__hamburger-submenu-button");
 const cartButton = document.getElementById("cart-menu__button");
 const subMenu = document.getElementById("nav__hamburger-submenu-wrapper");
+const carouselForwardButton = document.getElementById("carousel__forward-button")
+const carouselBackButton = document.getElementById("carousel__back-button")
 
 const cartNav = await import('./cart.js');
 const hamburgerNav = await import('./hamburgerMenu.js');
 const submenuNav = await import('./submenu.js');
+const carouselI = await import('./carousel.js');
 
 document.addEventListener("click", function (event) {
     switch (event.target) {
@@ -46,6 +49,12 @@ document.addEventListener("click", function (event) {
             submenuNav.toggleSubmenu();
             hamburgerNav.toogleHamburger();
             break;
+        case carouselForwardButton:
+            carouselI.carouselNext();
+        break;
+        case carouselBackButton:
+            carouselI.carouselPrev();
+        break;
         default:
             if ((!cartMenu.contains(event.target)) && (!hamburgerMenu.contains(event.target)) && (!subMenu.contains(event.target))) {
                 hamburgerNav.toogleHamburgerControl();

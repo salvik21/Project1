@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <title>Renoma</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -61,7 +61,7 @@
             <div class="nav__cart-wrapper">
                 <img id="nav__cart" class="nav__cart" src="images/cart.png" alt="Cart image">
                 <div id="nav__cart-menu" class="nav__cart-menu --hidden">
-                    <div class="cart__menu-button"><a href="#">$44.50</a></div>
+                    <div class="cart__menu-button"><label>$44.50</label></div>
                     <div class="cart__menu-button"><a href="#">View Cart</a></div>
                     <div class="cart__menu-button"><a href="#">Checkout</a></div>
                 </div>
@@ -73,17 +73,39 @@
     </header>
     <main>
         <section class="carousel">
-            <div class="carousel__image-wrapper">
-                <img class="carousel__image" src="images/carousel_img_1.png" alt=" image_1">
+            <div class="carousel-wrapper" id="carousel-wrapper">
+                <div class="carousel__image-wrapper" id="carousel__image-wrapper">
+                </div>  
+                <div class="carousel__title-wrapper" id="carousel__title-wrapper">
+                <div class="carousel__title-line" id="carousel__title-line">
+                    <div class="carousel__main-title-wrapper" id="carousel__main-title-wrapper">
+                        <h1 class="carousel__main-title">made with love</h1>
+                    </div>
+                    <div class="carousel__second-title-wrapper" id="carousel__second-title-wrapper">
+                        <h3 class="carousel__second-title">for you</h3>
+                    </div>
+                </div>
+                <div class="carousel__title-line" id="carousel__title-line">
+                    <div class="carousel__main-title-wrapper" id="carousel__main-title-wrapper">
+                        <h1 class="carousel__main-title">Made with hate</h1>
+                    </div>
+                    <div class="carousel__second-title-wrapper" id="carousel__second-title-wrapper">
+                        <h3 class="carousel__second-title">for myself</h3>
+                    </div>
+                </div>
+                <div class="carousel__title-line" id="carousel__title-line">
+                    <div class="carousel__main-title-wrapper" id="carousel__main-title-wrapper">
+                        <h1 class="carousel__main-title">Oranges and laptops</h1>
+                    </div>
+                    <div class="carousel__second-title-wrapper" id="carousel__second-title-wrapper">
+                        <h3 class="carousel__second-title">for everyone</h3>
+                    </div>
+                </div>
             </div>
-            <div class="carousel__main-title-wrapper">
-                <h1 class="carousel__main-title">made with love</h1>
             </div>
-            <div class="carousel__second-title-wrapper">
-                <h3 class="carousel__second-title">for you</h3>
-            </div>
-            <div class="carousel__forward-button"></div>
-            <div class="carousel__back-button"></div>
+        </div>
+            <div class="carousel__forward-button" id="carousel__forward-button"></div>
+            <div class="carousel__back-button" id="carousel__back-button"></div>
         </section>
         <section class="about">
             <div class="about__img-wrapper">
