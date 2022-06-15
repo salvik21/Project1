@@ -19,7 +19,7 @@ const carouselBackButton = document.getElementById("carousel__back-button")
 const cartNav = await import('./cart.js');
 const hamburgerNav = await import('./hamburgerMenu.js');
 const submenuNav = await import('./submenu.js');
-const carouselI = await import('./carousel.js');
+const carouselImage = await import('./carousel.js');
 
 document.addEventListener("click", function (event) {
     switch (event.target) {
@@ -50,11 +50,17 @@ document.addEventListener("click", function (event) {
             hamburgerNav.toogleHamburger();
             break;
         case carouselForwardButton:
-            carouselI.carouselNext();
-        break;
+            carouselImage.carouselNext();
+            cartNav.toogleCartControl();
+            submenuNav.toggleSubmenuControl();
+            hamburgerNav.toogleHamburgerIconControl();
+            break;
         case carouselBackButton:
-            carouselI.carouselPrev();
-        break;
+            carouselImage.carouselPrev();
+            cartNav.toogleCartControl();
+            submenuNav.toggleSubmenuControl();
+            hamburgerNav.toogleHamburgerIconControl();
+            break;
         default:
             if ((!cartMenu.contains(event.target)) && (!hamburgerMenu.contains(event.target)) && (!subMenu.contains(event.target))) {
                 hamburgerNav.toogleHamburgerControl();
@@ -62,7 +68,7 @@ document.addEventListener("click", function (event) {
                 submenuNav.toggleSubmenuControl();
                 hamburgerNav.toogleHamburgerIconControl();
             }
-     }
+    }
 
 }
 )
