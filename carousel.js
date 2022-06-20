@@ -32,22 +32,22 @@ for (let i = 0; i < carouselImg.length; i++) {
     carouselImagewrapper.append(img_creater);
 }
 
-var derection = -1;
+let direction = -1;
 
-function prependImageTile() {
+function prependImageTitle() {
     carouselTitle.prepend(carouselTitle.lastElementChild)
     carouselImagewrapper.prepend(carouselImagewrapper.lastElementChild);
 }
 
-function appendImageTile() {
+function appendImageTitle() {
     carouselTitle.appendChild(carouselTitle.firstElementChild)
     carouselImagewrapper.appendChild(carouselImagewrapper.firstElementChild);
 }
 
 export function carouselNext() {
-    if (derection === 1) {
-        prependImageTileconrol();
-        derection = -1;
+    if (direction === 1) {
+        prependImageTitle();
+        direction = -1;
     }
     carouselWrapper.style.justifyContent = 'flex-start';
     carouselImagewrapper.style.transform = 'translate(-33.33%)';
@@ -55,11 +55,11 @@ export function carouselNext() {
 }
 
 carouselImagewrapper.addEventListener('transitionend', function () {
-    if (derection === -1) {
-        appendImageTile();
+    if (direction === -1) {
+        appendImageTitle();
     }
-    if (derection === 1) {
-        prependImageTile();
+    if (direction === 1) {
+        prependImageTitle();
     }
     carouselImagewrapper.style.transition = 'none';
     carouselTitle.style.transition = 'none';
@@ -72,9 +72,9 @@ carouselImagewrapper.addEventListener('transitionend', function () {
 })
 
 export function carouselPrev() {
-    if (derection === -1) {
-        appendImageTile();
-        derection = 1;
+    if (direction === -1) {
+        appendImageTitle();
+        direction = 1;
     }
     carouselWrapper.style.justifyContent = 'flex-end';
     carouselImagewrapper.style.transform = 'translate(33.33%)';
