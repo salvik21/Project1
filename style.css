@@ -45,50 +45,9 @@ main {
   height: 22px;
 }
 
-.carousel {
-  position: relative;
-  z-index: 0;
-}
-
-.carousel__image {
-  width: 100%;
-  height: 504px;
-  display: block;
-}
-
-.carousel__main-title {
-  color: #ffffff;
-  font-size: 27px;
-  font-family: Poppins, sans-serif;
-  word-spacing: 7px;
-  letter-spacing: 3px;
-  box-sizing: border-box;
-}
-
-.carousel__main-title-wrapper {
-  position: absolute;
-  top: 235px;
-  margin-left: 14px;
-  box-sizing: border-box;
-}
-
-.carousel__second-title-wrapper {
-  position: absolute;
-  top: 285px;
-  margin-left: 14px;
-}
-
-.carousel__second-title {
-  color: #aa6d6d;
-  font-family: Poppins, sans-serif;
-  font-size: 22px;
-  word-spacing: 7px;
-  letter-spacing: 3px;
-}
-
 .carousel__forward-button {
   position: absolute;
-  top: 390px;
+  top: 400px;
   margin-left: 95px;
   width: 50px;
   height: 50px;
@@ -99,7 +58,7 @@ main {
 
 .carousel__back-button {
   position: absolute;
-  top: 390px;
+  top: 400px;
   margin-left: 30px;
   width: 50px;
   height: 50px;
@@ -233,7 +192,7 @@ footer {
   z-index: 30;
 }
 
-.cart__menu-button a {
+.cart__menu-button a, .cart__menu-button label {
   color: rgb(0, 0, 0);
   padding: 10px 10px;
   font-size: 15px;
@@ -252,9 +211,8 @@ footer {
   top: 73px;
   left: 0;
   width: 100%;
-  height: 528px;
+  height: 565px;
   background-color: #ffffff;
-  z-index: 30;
 }
 
 .nav__hamburger-menu-button a, .nav__hamburger-submenu-button a {
@@ -442,4 +400,55 @@ input[type=text]:active {
 
 .cart__menu-button a:active {
   color: #be4642;
+}
+
+.carousel-wrapper{
+  overflow: hidden; 
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.carousel__image-wrapper {
+  width: 300%;
+  display: flex;
+  flex-shrink: 0;
+  transition: all ease 0.6s;
+}
+
+.carousel__image {
+  width: 33.33%;
+  flex: 1;
+  height: 450px;
+}
+
+.carousel__title-wrapper {
+  display: flex;
+  top: 180px;
+  width: 300%;
+  flex: 1;
+  transition: all ease 0.8s;
+  position: absolute;
+}
+
+.carousel__title-line {
+  height: 140px;
+  width: 33.33%;
+  padding-left:20px ;
+}
+
+.carousel__main-title {
+  color: #ffffff;
+  font-size: 27px;
+  font-family: Poppins, sans-serif;
+  word-spacing: 7px;
+  letter-spacing: 3px;
+}
+
+.carousel__second-title {
+  color: #aa6d6d;
+  font-family: Poppins, sans-serif;
+  font-size: 22px;
+  word-spacing: 7px;
+  letter-spacing: 3px;
 }
