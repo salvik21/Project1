@@ -24,12 +24,12 @@ const carouselImg = [
 ];
 
 for (let i = 0; i < carouselImg.length; i++) {
-    const threeImages = document.createElement("img")
-    threeImages.setAttribute("id", carouselImg[i].id);
-    threeImages.setAttribute("class", carouselImg[i].class);
-    threeImages.setAttribute("src", carouselImg[i].srs);
-    threeImages.setAttribute("alt", carouselImg[i].alt);
-    carouselImagewrapper.append(threeImages);
+    const imageElement = document.createElement("img")
+    imageElement.setAttribute("id", carouselImg[i].id);
+    imageElement.setAttribute("class", carouselImg[i].class);
+    imageElement.setAttribute("src", carouselImg[i].srs);
+    imageElement.setAttribute("alt", carouselImg[i].alt);
+    carouselImagewrapper.append(imageElement);
 }
 
 let direction = -1;
