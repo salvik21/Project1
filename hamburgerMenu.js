@@ -2,7 +2,7 @@ const hamburgerMenu = document.getElementById("nav__hamburger-menu");
 const hamburgerIcon = document.getElementById("nav__hamburger-icon");
 
 export function toogleHamburger() {
-    hamburgerMenu.classList.toggle("--hidden");
+    hamburgerMenu.classList.toggle("hidden");
 }
 
 export function toogleHamburgerIcon() {
@@ -10,7 +10,7 @@ export function toogleHamburgerIcon() {
 }
 
 export function toogleHamburgerControl() {
-    if (!hamburgerMenu.classList.contains("--hidden")) {
+    if (!hamburgerMenu.classList.contains("hidden")) {
         toogleHamburger();
     }
 }
