@@ -69,17 +69,17 @@ main {
 
 @font-face {
   font-family: 'Poppins';
-  src: url('fond/Poppins-SemiBold.ttf');
+  src: url('font/Poppins-SemiBold.ttf');
 }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url('fond/Montserrat-Regular.ttf');
+  src: url('font/Montserrat-Regular.ttf');
 }
 
 @font-face {
   font-family: 'Pacifico';
-  src: url('fond/Pacifico-Regular.ttf');
+  src: url('font/Pacifico-Regular.ttf');
 }
 
 .about__img-wrapper {
@@ -184,7 +184,7 @@ footer {
   margin: 0;
   padding: 0;
   position: absolute;
-  top:73px;
+  top: 73px;
   right: 35px;
   width: 200px;
   height: 116px;
@@ -193,7 +193,7 @@ footer {
 }
 
 .cart__menu-button a, .cart__menu-button label {
-  color: rgb(0, 0, 0);
+  color: #000000;
   padding: 10px 10px;
   font-size: 15px;
   display: block;
@@ -253,7 +253,7 @@ footer {
 }
 
 .nav__hamburger-submenu-button-title {
-  color: rgb(0, 0, 0);
+  color: #000000;
   padding: 10px 0 10px 20px;
   font-size: 13px;
   text-decoration: none;
@@ -265,17 +265,17 @@ footer {
   margin: 0;
 }
 
-input[type=text] {
+input {
   outline: 0;
   width: 100%;
   height: 60px;
   border: none;
   font-size: 16px;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   letter-spacing: 3px;
 }
 
-input[type=text]:active {
+input:active {
   font-family: sans-serif;
 }
 
@@ -302,12 +302,12 @@ input[type=text]:active {
   width: 15px;
   height: 15px;
 }
-/*********************************************************/
+
 .nav__hamburger-submenu-button-wrapper, .nav__hamburger-menu-button, .nav__hamburger-submenu-button {
   border-top: 2px solid #fcfcfc;
 }
 
-.--hidden {
+.hidden {
   display: none;  
 }
 
